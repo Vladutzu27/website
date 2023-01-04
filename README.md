@@ -1,2 +1,2 @@
 # website
-[ghiocel-games.com](https://ghiocel.games.com)
+[ghiocel-games.com](https://ghiocel-games.com)
