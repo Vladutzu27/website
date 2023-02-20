@@ -20,6 +20,7 @@
 }
 .logo{
     width: 120px;
+    height: 100%;
     cursor: pointer;
 }
 .navbar ul li{
