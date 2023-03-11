@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Website Background with Moving Gradient</title>
+    <style>
+      body {
+        background-color: #000;
+        background-image: linear-gradient(45deg, #ff006a, #ec5808, #ffd900, #47ea47, #4b5bf4);
+        background-size: 1000% 1000%;
+        animation: gradient 20s ease infinite;
+      }
+      
+      @keyframes gradient {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+      img {
+        height: 500px;
+        width: auto
+      }
+      div{
+        display: flex;
+      }
+      *{
+        font-family: sans-serif;
+        color: aliceblue;
+      }
+      .navbar {
+            width: 85%;
+            margin: auto;
+            padding: 35px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            z-index: 2;
+            position: relative;
+        }
+        .logo {
+            width: 120px;
+            height: auto;
+            cursor: pointer;
+        }
+    </style>
+  </head>
+  <body>
+    <div>
+        <div class="navbar">
+            <a href="/">
+                <img src="logo.png" class="logo">
+            </a>
+        </div>
+        <img src="pocpocpoc.png" alt="POCPOCPOC">
+        <h1>NOT AVALABLE FOR DOWNLOAD</h1>
+        <p>(yet)</p>
+    </div>
+  </body>
+</html>
