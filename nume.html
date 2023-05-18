@@ -1,0 +1,42 @@
+<html>
+<head>
+  <title>CSRE - Display nume</title>
+  <style>
+    body{
+        background-image: url("csrefamilie.png");
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    h1 {
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        margin: auto;
+        width: 90%;
+        padding: 10px;
+    }
+  </style>
+  <script>
+    function getParameterByName(name, url) {
+      if (!url) url = window.location.href;
+      name = name.replace(/[\[\]]/g, '\\$&');
+      var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+          results = regex.exec(url);
+      if (!results) return null;
+      if (!results[2]) return '';
+      return decodeURIComponent(results[2].replace(/\+/g, ' '));
+    }
+
+    window.onload = function() {
+      var word = getParameterByName('nume');
+
+      var titlunume = document.getElementById('numele');
+      titlunume.innerHTML = word;
+    };
+  </script>
+</head>
+<body>
+    
+  <h1 id="numele">ceva</h1>
+</body>
+</html>
