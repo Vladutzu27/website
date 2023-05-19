@@ -46,6 +46,10 @@
 
       var titlunume = document.getElementById('numele');
       titlunume.innerHTML = word.toUpperCase();
+
+      const textLength = titlunume.textContent.length;
+      const fontSize = 400 / textLength; // Ajustează această valoare pentru a obține dimensiunea dorită
+      titlunume.style.fontSize = `${fontSize}vw`;
     };
   </script>
 </head>
