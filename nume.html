@@ -49,6 +49,7 @@
 
       const textLength = titlunume.textContent.length;
       const fontSize = 400 / textLength; // Ajustează această valoare pentru a obține dimensiunea dorită
+      fontSize = Math.min(fontSize, 400);
       titlunume.style.fontSize = `${fontSize}vw`;
     };
   </script>
