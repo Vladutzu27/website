@@ -21,7 +21,7 @@
     }
 
     h1 {
-  font-size: clamp(4rem, 10vw, 10rem);
+      font-size: clamp(6rem, 12vw, 20rem);
   position: fixed;
   top: 50%;
   left: 50%;
@@ -45,7 +45,7 @@
       var word = getParameterByName('nume');
 
       var titlunume = document.getElementById('numele');
-      titlunume.innerHTML = word;
+      titlunume.innerHTML = word.toUpperCase();
     };
   </script>
 </head>
