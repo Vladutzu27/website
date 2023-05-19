@@ -11,11 +11,27 @@
     }
     h1 {
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        margin: auto;
-        width: 90%;
-        padding: 10px;
+        width: 100%;
+        background: linear-gradient(#81e8f3, #ffffff);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
-  </style>
+    h1{
+        font-size: 22em;
+    }
+
+    @media screen and (max-width: 768px) {
+      h1 {
+        font-size: 6vw;
+      }
+    }
+
+    @media screen and (min-width: 769px) {
+      h1 {
+        font-size: 4vw;
+      }
+    }
+    </style>
   <script>
     function getParameterByName(name, url) {
       if (!url) url = window.location.href;
@@ -31,12 +47,11 @@
       var word = getParameterByName('nume');
 
       var titlunume = document.getElementById('numele');
-      titlunume.innerHTML = word;
+      titlunume.innerHTML = toUpperCase(word);
     };
   </script>
 </head>
 <body>
-    
-  <h1 id="numele">ceva</h1>
+  <h1 id="numele">ceva mai lung pentru test</h1>
 </body>
 </html>
