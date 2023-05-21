@@ -16,19 +16,17 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
-    h1{
-      font-size: clamp(2rem, 10vw, 6rem);
-    }
 
     h1 {
       font-size: clamp(6rem, 12vw, 20rem);
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  text-align: center;
-}
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      text-align: center;
+      text-overflow: ellipsis;
+    }
   </style>
   <script>
     function getParameterByName(name, url) {
@@ -48,7 +46,7 @@
       titlunume.innerHTML = word.toUpperCase();
 
       const textLength = titlunume.textContent.length;
-      const fontSize = 400 / textLength; // Ajustează această valoare pentru a obține dimensiunea dorită
+      const fontSize = 400 / textLength;
       fontSize = Math.min(fontSize, 400);
       titlunume.style.fontSize = `${fontSize}vw`;
     };
